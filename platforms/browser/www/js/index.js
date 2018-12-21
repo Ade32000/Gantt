@@ -8,6 +8,9 @@ var day_cpt = [];
 var week_cpt = [];
 var day_cpt = [];
 
+var durationTask;
+var form_resp = [];
+
 for (var i = 1; i <= 12; i++) {
     month_cpt.push(i);
 }
@@ -15,12 +18,6 @@ for (var i = 1; i <= 52; i++) {
     week_cpt.push(i);
 }
 /************************************************************************************************* */
-var nameProject = $('#input_projectName').val();
-var nameTask = $('#input_taskName').val();
-var dateTask = $('#pick_date').val();
-var durationTask;
-
-
 
 function start(){
     console.log('hello');
@@ -49,16 +46,16 @@ $('#select_week').one('click', function(){
 /****************** END FORM ********************************* END FORM **************************************/
 
 $('#publish').on('click', function(){
-    // nameProject = $('#input_projectName').val();
-    // nameTask = $('#input_taskName').val();
-    // dateTask = $('#pick_date').val();   
+    var nameProject = $('#input_projectName').val();
+    var nameTask = $('#input_taskName').val();
+    var dateTask = $('#pick_date').val();   
     console.log(nameProject);
     console.log(nameTask);
     console.log(dateTask);
-    
-    return false;
+    form_resp.push(nameProject);
+    form_resp.push(nameTask);
+    form_resp.push(dateTask);
+    return form_resp;
 });
 
-console.log(nameProject);
-    console.log(nameTask);
-    console.log(dateTask);
+    console.log(form_resp);
