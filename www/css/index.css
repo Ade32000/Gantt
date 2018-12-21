@@ -1,0 +1,27 @@
+.icon_home{
+    width: 50px;
+    height: 50px;
+}
+.link_home{
+    width: 60px;
+    height: 60px;
+}
+.icon_home:hover{
+    cursor: pointer;
+}
+.link_home:hover{
+    cursor: pointer;
+}
+#btn_home, #bloc_time{
+    display: flex;
+    flex-direction: row;
+}
+#select_time, #div_date, #div_taskName, #div_projectName{
+    display: flex;
+    flex-direction: column;
+}
+#div_form{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
