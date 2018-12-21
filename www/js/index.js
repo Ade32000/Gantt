@@ -55,7 +55,10 @@ $('#publish').on('click', function(){
     form_resp.push(nameProject);
     form_resp.push(nameTask);
     form_resp.push(dateTask);
+    
     return form_resp;
 });
 
     console.log(form_resp);
+
+
